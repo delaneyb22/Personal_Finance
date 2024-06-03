@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#transactions">Transactions</a></li>
+                <li><a href="#budget">Budget</a></li>
+                <li><a href="#goals">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <div class="dashboard-overview">
+                <p>Total Income: $<span id="total-income"></span></p>
+                <p>Total Expenses: $<span id="total-expenses"></span></p>
+                <p>Savings: $<span id="savings"></span></p>
+            </div>
+        </section>
+        <section id="transactions">
+            <h1>Transactions</h1>
+            <form id="add-transaction-form">
+                <label for="transaction-name">Transaction Name:</label>
+                <input type="text" id="transaction-name" name="transaction-name">
+                <label for="transaction-amount">Transaction Amount:</label>
+                <input type="number" id="transaction-amount" name="transaction-amount">
+                <button type="submit">Add Transaction</button>
+            </form>
+            <ul id="transaction-list">
+                <!-- transaction list will be rendered here -->
+            </ul>
+        </section>
+        <section id="budget">
+            <h1>Budget</h1>
+            <form id="add-budget-form">
+                <label for="budget-category">Budget Category:</label>
+                <input type="text" id="budget-category" name="budget-category">
+                <label for="budget-amount">Budget Amount:</label>
+                <input type="number" id="budget-amount" name="budget-amount">
+                <button type="submit">Add Budget</button>
+            </form>
+            <ul id="budget-list">
+                <!-- budget list will be rendered here -->
+            </ul>
+        </section>
+        <section id="goals">
+            <h1>Goals</h1>
+            <form id="add-goal-form">
+                <label for="goal-name">Goal Name:</label>
+                <input type="text" id="goal-name" name="goal-name">
+                <label for="goal-amount">Goal Amount:</label>
+                <input type="number" id="goal-amount" name="goal-amount">
+                <button type="submit">Add Goal</button>
+            </form>
+            <ul id="goal-list">
+                <!-- goal list will be rendered here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
